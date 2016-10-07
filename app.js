@@ -1,23 +1,32 @@
 $(document).ready(function(){
-	//votre code
+
+
 	var counter =0 ;
-	$(".cake").click(function() {
-		console.log(counter++);
-		$('span').html(counter+1)
-		if (counter === 20){
-			alert("Arrête sion bientôt tu va pouvoir acheter une nouvelle souris")
+
+	var message = [ 'Provencal le gaulois','Karadok','Bort','Arthur le sanglier de cornouaille'];
+
+	function random(){
+
+		var randomMessage = Math.floor(Math.random()* 4)+ 1;
+
+		return randomMessage;
+
+	}
+
+	$('img').click(function(){
+
+		counter++;
+
+		$('span').text(counter);
+
+		if (counter % 20 === 0){
+			
+			var nbalea = random();
+			var randomMes = message[nbalea];
+			alert(randomMes);
+
 		}
-			if (counter === 40){
-			alert("c'est pas faux")
-		}
-			if (counter === 60){
-			alert("Ah mais nan je connais pas de mot la ")
-		}
-			if (counter === 80){
-			alert("ok")
-		}
-			if (counter === 100){
-			alert("perceval")
-		}
-	});	
+
+	});
+
 });
