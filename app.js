@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	var counter =0 ;
 
-	var message = [ 'Provencal le gaulois','Karadok','Bort','Arthur le sanglier de cornouaille'];
+	var message = [ 'Provencal le gaulois','Karadok','Bort','Arthur le sanglier de cornouaille','Lancelot'];
 
 	function random(){
 
